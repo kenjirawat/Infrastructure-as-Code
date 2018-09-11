@@ -1,6 +1,6 @@
 provider "google" {
-  credentials = "${file("../account.json")}"    //part file authen
-  project     = "analog-bot-209016"             //Project ID
+  credentials = "${file("../account.json")}"    //* Part file authen
+  project     = "PROJECT_ID"                    //* Project ID
   region      = "asia-east1"                    //region machine 
 }
 resource "google_compute_instance" "infra-ac-1" {    // Build machine
