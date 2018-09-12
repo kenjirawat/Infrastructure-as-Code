@@ -1,0 +1,25 @@
+{
+    "builders": [
+      {
+        "type": "googlecompute",
+        "project_id": "PROJECT_ID",
+        "source_image_family": "debian-9",
+        "ssh_username": "admin",
+        "zone": "asia-southeast1-a",
+        "image_family": "packer-test",
+        "image_name": "image-test-packer"
+      }
+    ],
+    "provisioners": [
+        {
+        "type": "shell",
+        "script": "setup.sh",
+        "execute_command": "echo '' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
+        },
+        {
+        "type": "file",
+        "source": "templates/hello.txt",
+        "destination": "hello.txt"
+        }
+     ]
+}
