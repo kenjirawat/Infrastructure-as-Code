@@ -1,4 +1,4 @@
-# เริ่มต้นสร้างเครื่องกับ Terraform
+# เริ่มต้นสร้างเครื่องกับ Terraform & PACKER
 ## Download file Example
 ```
 git clone https://github.com/kenjirawat/Infrastructure-as-Code.git
