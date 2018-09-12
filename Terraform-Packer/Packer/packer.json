@@ -13,12 +13,12 @@
     "provisioners": [
         {
         "type": "shell",
-        "script": "setup.sh",
+        "script": "Packer/setup.sh",
         "execute_command": "echo '' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
         },
         {
         "type": "file",
-        "source": "templates/hello.txt",
+        "source": "Packer/templates/hello.txt",
         "destination": "hello.txt"
         }
      ]
