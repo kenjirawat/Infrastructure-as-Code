@@ -1,4 +1,6 @@
 # เริ่มต้นสร้างเครื่องกับ Terraform
+![Image](https://www.terraform.io/assets/images/og-image-f5bbc98c.png)
+
 ## Download file Example
 ```
 git clone https://github.com/kenjirawat/Infrastructure-as-Code.git

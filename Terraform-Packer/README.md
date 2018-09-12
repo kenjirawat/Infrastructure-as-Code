@@ -9,7 +9,7 @@ gcloud auth application-default login
 "project_id": "PROJECT_ID",
 ``` 
 ### file var.tf ของ Terraform
-```json
+```t
 variable "project-id" {
   default       = "*YOUR_PROJECT_ID"
 }
